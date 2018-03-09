@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Playfair Display', serif;
+}
+
+ul,ol{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.clr::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.fleft{
+	float: left;
+}
+
+.fright{
+	float: right;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+/* ==== START CSS CODE ==== */
+.tab_link li{
+	display: inline-block;
+}
+
+.tab_link li a{
+	color: #fff;
+	display: block;
+	padding: 30px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.tab_link li:nth-child(1) a{
+	background-color: #4caf50;
+}
+
+.tab_link li:nth-child(2) a{
+	background-color: #2196f3;
+}
+
+.tab_link li:nth-child(3) a{
+	background-color: #f44336;
+}
+
+.tab_content{
+	width: 100%;
+	padding: 30px;
+	color: #fff;
+	display: none;
+	position: relative;
+}
+
+.tab_content .close{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.tab_content:nth-child(1){
+	background-color: #4caf50;
+}
+
+.tab_content:nth-child(2){
+	background-color: #2196f3;
+}
+
+.tab_content:nth-child(3){
+	background-color: #f44336;
+}

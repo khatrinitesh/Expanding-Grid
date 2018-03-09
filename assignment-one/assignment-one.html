@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/common.css">
+
+
+	<!-- GOOGLE FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<ul class="tab_link">
+			<li><a href="#tab1" onclick="openTab('b1')">Box 1</a></li>
+			<li><a href="#tab2" onclick="openTab('b2')">Box 2</a></li>
+			<li><a href="#tab3" onclick="openTab('b3')">Box 3</a></li>
+		</ul>
+		<div class="tab_block">
+			<div class="tab_content" id='b1'>
+				<a href="javascript:void(0)" class="close" onclick="this.parentElement.style.display='none'">&times;</a>
+				<h3>London</h3>
+				<p>London is the capital city of England.</p>
+			</div>
+			<div class="tab_content" id='b2'>
+				<a href="javascript:void(0)" class="close" onclick="this.parentElement.style.display='none'">&times;</a>
+				<h3>Paris</h3>
+				<p>Paris is the capital city of France.</p>
+			</div>
+			<div class="tab_content" id='b3'>
+				<a href="javascript:void(0)" class="close" onclick="this.parentElement.style.display='none'">&times;</a>
+				<h3>Tokyo</h3>
+				<p>Tokyo is the capital city of Japan.</p>
+			</div>
+		</div>
+
+	</div>
+	<!-- JS -->
+	<!-- <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script type='text/javascript'>
+		// $(document).ready(function(){
+			
+		// });
+
+		function openTab(tabName) {
+		  var i, x;
+		  x = document.getElementsByClassName("tab_content");
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";
+		  }
+		  document.getElementById(tabName).style.display = "block";
+		}
+	</script>
+</body>
+</html>
